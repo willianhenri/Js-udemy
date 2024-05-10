@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+
+    <script>
+        let número = Number(prompt('Digite um número'))
+        let titulo = document.querySelector('#h1')
+        titulo.innerHTML += `Seu número é ${número} <br /> <br />`;
+        document.body.innerHTML += `Raiz quadrada: ${número**0.5} <br />`
+        document.body.innerHTML += `${número} é inteiro: ${Number.isInteger(número)} <br />` ;
+        document.body.innerHTML += `É NaN: ${Number.isNaN(número)} <br />`;
+        document.body.innerHTML += `Arredondando para baixo: ${Math.floor(número)} <br />`
+        document.body.innerHTML += `Arredondando para cima: ${Math.ceil(número)} <br />`
+        document.body.innerHTML += `Com duas casas decimais: ${número.toFixed(2)} <br />`
+    </script>
+</body>
+</html>
