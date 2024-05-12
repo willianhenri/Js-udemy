@@ -1,4 +1,4 @@
-function meuEscopo() {
+//function meuEscopo() {
     let form = document.querySelector(".form");
     //let resultado = document.querySelector('#res')
 
@@ -33,5 +33,5 @@ function meuEscopo() {
     }    
     form.addEventListener('submit', recebeEventoForm)
     
-}
-meuEscopo();
+//}
+//meuEscopo();
