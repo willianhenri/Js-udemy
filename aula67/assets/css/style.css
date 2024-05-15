@@ -68,4 +68,6 @@ input {
   font-size: 16px;
 }
 
-
+li {
+  list-style: none;
+}
