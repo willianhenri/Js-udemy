@@ -71,3 +71,9 @@ input {
 li {
   list-style: none;
 }
+
+@media screen and (max-width:500px) {
+  .container{
+      width: 90%;
+  }
+}
