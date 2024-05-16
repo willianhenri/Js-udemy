@@ -68,8 +68,30 @@ input {
   font-size: 16px;
 }
 
-li {
-  list-style: none;
+
+
+.apagar   {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.apagar:hover {
+  background-color: rgba(211, 211, 211, 0.493);
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px black;
+}
+
+.btn-tarefa {
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-tarefa:hover {
+  background-color: rgba(211, 211, 211, 0.493);
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px black;
 }
 
 @media screen and (max-width:500px) {
