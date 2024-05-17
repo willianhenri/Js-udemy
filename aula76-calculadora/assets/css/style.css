@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
 :root {
   --primary-color: rgb(17, 86, 102);
   --primary-color-darker: rgb(9, 48, 56);
@@ -13,7 +14,7 @@ body {
   margin: 0;
   padding: 0;
   background: var(--primary-color);
-  font-family: 'Open sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.3em;
   line-height: 1.5em;
 }
@@ -24,6 +25,7 @@ body {
   background: #fff;
   padding: 20px;
   border-radius: 10px;
+  width: 100%;
 }
 
 form input, form label, form button {
@@ -58,13 +60,18 @@ form button:hover {
 }
 
 .calculadora {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-collapse: collapse;
 }
 
 #display {
   font-size: 2em;
   width: 100%;
   text-align: right;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .btn {
@@ -74,8 +81,42 @@ form button:hover {
   border: none;
   background-color: #dfdfdf;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .btn:hover {
   background-color: #d9d9d9;
+}
+
+.calculadora td {
+  padding: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  form input {
+    font-size: 20px;
+    height: 40px;
+  }
+
+  form button {
+    font-size: 16px;
+    height: 40px;
+    margin-top: 20px;
+  }
+
+  #display {
+    font-size: 1.5em;
+    padding: 8px;
+  }
+
+  .btn {
+    height: 40px;
+    font-size: 0.9em;
+  }
 }
